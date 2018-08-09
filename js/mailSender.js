@@ -14,8 +14,8 @@ var data = {
 const mailSender = (data) =>
 mailgun.messages().send(data, function (error, body) {
     if(error){
-        console.log(error)
-    }
+    console.log(error);
+  };
   console.log(body);
 });
 
