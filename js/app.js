@@ -23,7 +23,7 @@ const timeRegistry = () => {
 
 const nameVisit = () => {
   let name = nameVisitDom.value;
-  console.log(name)
+  console.log(name);
   return name;
 };
 
@@ -36,7 +36,7 @@ const emailVisit = () => {
 
 const companyVisit = () => {
   let company = companyVisitDom.value;
-  console.log(company)
+  console.log(company);
   return company;
 };
 
@@ -44,7 +44,7 @@ const personVisit = () => {
   let personVisit = personVisitDom.value;
   console.log(personVisit);
   return personVisit;
-}
+};
 
 // Registro de Visitantes
 btnSend.addEventListener('click', element => {
@@ -60,5 +60,11 @@ btnSend.addEventListener('click', element => {
     person: personVisit(),
     date: dateRegistry(),
     time: timeRegistry()
-  });
+  })
+    .then(function() {
+      window.location.assign('camera.html');
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
 });
