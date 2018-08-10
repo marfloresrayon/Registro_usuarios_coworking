@@ -20,8 +20,8 @@ Nuestro equipo decidió abordar la problemática de...por medio de la creación 
 ## El proceso
 
 Para tener un mejor entendimiento del proceso de registro existente y los usuarios 
-que realizan este proceso decidí visitar el espacio **Capital Coworking**, ubicado 
-en Tonalá 30, Col. Roma Norte, en la Ciudad de México.
+que realizan este proceso decidí visitar el espacio **Capital Coworking**, ubicado
+en la Ciudad de México.
 
 ### Insights obtenidas:
 
