@@ -99,10 +99,19 @@ Antes de nuestras visitas a los distintos coworks elaboramos una guía de entrev
 * Están abiertos a la digitalización del proceso, mientras se conserve el factor humano
   en el proceso de registro. 
 
-![Fotografías. Coworking A]()
+![Fotografías. Coworking A](img/GIFA.gif)
 
 #### Sobre la entrevista con el coworking "B":
-Durante la entrevista, la encargada me comentó que les era muy importante que hubiera personas que recibieran a la gente en la puerta, que uno de los mayores valores que ofrecen como coworking es la seguridad de las personas que trabajan en él y eso lo hacen notar desde el proceso de registro con la atención del personal de recepción. Me comentó que trabajan con Envoy, hace unos meses que han comenzado a usarlo, pero el cambio aún no es definitivo como lo es en otras sucursales, donde toman fotografía de los visitantes y entregan credenciales que pasan por un torniquete al entrar y salir. Será en octubre, cuando Laboratoria ocupe uno de los pisos que habrán implementado Envoy y el sistema de torniquetes ya que, como me comentó, la entrada y salida de personas será mayor y tendrán que tener un mayor control.  
+Durante la entrevista, la encargada me comentó que les era muy importante que hubiera 
+personas que recibieran a la gente en la puerta, que uno de los mayores valores que ofrecen 
+como coworking es la seguridad de las personas que trabajan en él y eso lo hacen notar 
+desde el proceso de registro con la atención del personal de recepción. Me comentó que 
+trabajan con Envoy, hace unos meses que han comenzado a usarlo, pero el cambio aún no es 
+definitivo como lo es en otras sucursales, donde toman fotografía de los visitantes y 
+entregan credenciales que pasan por un torniquete al entrar y salir. Será en octubre, 
+cuando Laboratoria ocupe uno de los pisos que habrán implementado Envoy y el sistema de 
+torniquetes ya que, como me comentó, la entrada y salida de personas será mayor y tendrán 
+que tener un mayor control.  
 
 #### Insights obtenidas coworking "B":
 * El coworking valora la seguridad que ofrece a sus colaboradores, por lo que
@@ -116,37 +125,60 @@ Durante la entrevista, la encargada me comentó que les era muy importante que h
 * Al personal de recepción puede parecerle complicado el manejo de esta herramienta, 
   dependiendo del nivel de conocimiento tecnológico que posean. 
 
+#### Sobre la entrevista con el coworking "C":
+- Requerimientos de registro para los usuarios colaboradores del coworking: 
+  Ninguno, dado que son colaboradores entran de manera directa.
+- Edad promedio de los usuarios: Entre 25 a 45 años.
+- Número aproximado de visitas por día: Más de 25 visitas.
+- Requerimientos  de registro para los visitantes: 
+  Deben registrarse en un libro de visitas, ingresando los siguientes datos: 
+  fecha de entrada, nombre completo, a quién se visita, asunto de la visita, 
+  hora de entrada y hora de salida. 
+  También se le solicita una credencial de elector, de la cual se verifica 
+  que el nombre y la foto corresponda con los del usuario que se está registrando.
+  Después de que el usuario se registra se le anuncia a la persona visitada que 
+  su visita llegó, para que salga al área de recepción a recibirle.
+  Existen casos en los que no se deja entrar a alguna visita, como cuando la persona 
+  a quien se visita (o su empresa) confirma que no conoce a la visita y por lo tanto 
+  no puede recibirla. 
+
 #### Insights obtenidas coworking "C":
+* El proceso de registro de usuario no está digitalizado.
+* El personal de recepción no se limita a esta área, por lo que también llevan a cabo 
+  tareas en otras áreas del coworking.
+* El personal de recepción identifica la necesidad de digitalizar y modernizar el proceso
+  de registro, creen que daría una mejor imagen al coworking, ya que otros espacios
+  cuentan con este servicio. 
+* Este coworking valora el factor humano, ya que les parece primordial para brindar más
+  seguridad a sus clientes. 
+
+![Fotografías. Coworking C](img/GIFC.gif)
+
+#### Sobre la entrevista con el coworking "D":
+- Sus usuarios son jóvenes entre los 24 y 35 años.
+- El proceso de registro toma un minuto, no solicitan identificación y 
+  la información que solicitan en su formato es el nombre y el horario de 
+  entrada y salida.
+- Es el coworking más pequeño de los que visitamos, su proceso no se 
+  encuentra digitalizado.
 
 #### Insights obtenidas coworking "D":
+* El proceso de registro es percibido por el personal de recepción como 
+  tedioso y obsoleto. La información que se escribe en el libro de registro 
+  se lleva a un Excel para procesarla. Por lo que implica más trabajo con 
+  los mismos datos.
+* Desean automatizar el proceso para poder ligarlo con otros aspectos 
+  como el cobro del espacio de acuerdo al tiempo de uso por cliente.
+* No cuentan con los filtros de seguridad que encontramos en otros espacios,
+  el acceso fue más sencillo y tomó menos tiempo. 
 
-- El proceso de ingreso se encuentra digitalizado en un 50% 
-- Cuentan con una base de datos a la que tiene acceso el personal de recepción, la 
-  cual contiene las empresas presentes en el coworking y los datos de sus empleados
-- El proceso de ingreso se lleva a cabo de la siguiente forma:
-    - Saludo de parte del personal de recepción
-    - Se les pide anotar su nombre en una hoja de papel, persona a la que visitan 
-      firma, hora de entrada y de salida
-    - Resolución de dudas por parte del personal de recepción, en caso de haberlas 
-    - Invitación a tomar asiento dentro de la sala de espera, a unos pasos de la 
-      recepción
-    - El personal de recepción se comunica con la persona visitada por medio de 
-      Whatsapp y avisa de la llegada de su visitante
-    - En caso de recibir una confirmación de la persona visitada, el personal de 
-      recepción le indica al visitante el camino para llegar a la oficina en cuestión
-    - En caso de no ser aceptado el visitante, el personal de recepción actúa como 
-      mediador para indicarle la razón por la que no podrá pasar a las oficinas
-    - Al concluir su visita se les pide anotar su hora de salida
-- Durante el tiempo que estuve allí, algunos visitantes olvidaron anotar su hora de 
-  salida, por lo que el personal de recepción tuvo que hacerlo
+![Fotografías. Coworking C](img/FotoD.jpeg)
+
+## Benchmark 
 
 
 
 
-## Benchmark ![Benchmark]()
-
-Antes de empezar a idear la solución que propondríamos, decidimos hacer un benchmark
-de los distintos procesos de registro de usuario usados en espacios de coworking.
 
 
 El coworking se centra en la 
@@ -159,12 +191,6 @@ La demanda de este tipo de espacios se ha visto favorecida por el crecimiento de
 **creativos y tecnológicos**.
 
 Crear un sistema de registro de usuarios para un espacio de coworking que aborde las siguientes problemáticas:
-
-
-*
-*
-*
-*
 
 ### Usuarios:
 
