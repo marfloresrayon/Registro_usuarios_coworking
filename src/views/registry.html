@@ -12,7 +12,7 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Yanone+Kaffeesatz" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
@@ -20,14 +20,14 @@
         <div class"row">
          <a class="btn btn-primary left" href="Index.html" role="button">
              <i class="fas fa-arrow-circle-left"></i></a>
-        <img class="center" id="img"src="img/Logo/logo-ola.png">
+        <img class="center" id="img"src="../img/Logo/logo-ola.png">
         </div>
-    <section>
+    <section id="app">
         <div class="input-group mb-3 col-11">
             <div class="input-group-prepend">
             <span class="input-group-text" id="name">Nombre</span>
             </div>
-            <input id="name-Visit" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="name">     
+            <input id="name-Visit" v-model="from_name"type="text" class="form-control" aria-label="Sizing example input" aria-describedby="name">     
         </div>
         <div class="input-group mb-3 col-11">
             <div class="input-group-prepend">
@@ -43,23 +43,33 @@
         </div>
         <div id="infoCompany" class="input-group mb-3 col-11">
             <div class="input-group-prepend">
-            <label class="input-group-text" for="person-Visit">A quién visita:</label>
+            <label class="input-group-text" for="optionName">Empresa que visita:</label>
+            </div>
+        <select class="custom-select" id="optionNameCompany">
+            <option selected>Empresa...</option>
+
+            </select>
+            </div>  
+        <div id="infoEmployee" class="input-group mb-3 col-11">
+            <div class="input-group-prepend">
+            <label class="input-group-text" for="optionNameEmployee">A quién visita:</label>
         </div>
-        <select class="custom-select" id="person-Visit">
-            <option selected>Seleccione un nombre</option>
-            <option>Victor Perez</option>
-            <option>Antonio Gomez</option>
-            <option>Daniel Morales</option>
-            <option>Teresa Navarro</option>
-            <option>Araceli Merino</option>
-            <option>Isabel Blanco</option>
-            <option>Ivan Alarcon</option>
+        <select class="custom-select" id="optionNameEmployee">
+            <option selected>Empleado...</option>
         </select>
-        </div>  
+        </div>
+        
+        <div id="infoEmail" class="input-group mb-3 col-11">
+            <div class="input-group-prepend">
+            <label class="input-group-text" for="optionEmailEmployee">Email:</label>
+        </div>
+        <select class="custom-select" id="optionEmailEmployee">
+        </select>
+        </div>
     </section>
 
 <footer>
-        <button id="btn-Send" class="btn btn-primary rigth" type="button">
+        <button @click="enviar" id="btn-Send" class="btn btn-primary rigth" type="button">
                 <i class="fas fa-arrow-circle-right"></i></button>
 </footer>
    
@@ -67,13 +77,15 @@
 
 
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-messaging.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-functions.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/data.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+
+
 </body>
 </html>
