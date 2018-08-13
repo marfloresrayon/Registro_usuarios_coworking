@@ -1,7 +1,5 @@
 let cardPass = document.getElementById('cardPass');
 
-
-
 firebase.database().ref('visit')
   .on('child_added', (newUser)=>{
     cardPass.innerHTML =
