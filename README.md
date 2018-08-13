@@ -178,6 +178,10 @@ que tener un mayor control.
 
 ![Benchmark](src/img/bench.png)
 
+## :woman::man: Personas
+
+![Personas](src/img/persona.png)
+
 El coworking se centra en la 
 creación de un espacio que fomente la colaboración, los conocimientos compartidos, 
 la **innovación y la experiencia de usuario**. Haciendo énfasis en esta última parte, 
