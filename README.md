@@ -56,7 +56,7 @@ Antes de nuestras visitas a los distintos coworks elaboramos una guía de entrev
 * Edad promedio de los visitantes
 * Número promedio de visitantes
 
-![Transcripción de las entrevistas a los espacios de coworking "A" "B" "C" y "D"](https://drive.google.com/drive/folders/1ocgHERLB35E4b09Q7KZS7mcEPTufXOJD?usp=sharing)
+[Transcripción de las entrevistas a los espacios de coworking "A" "B" "C" y "D"](https://drive.google.com/drive/folders/1ocgHERLB35E4b09Q7KZS7mcEPTufXOJD?usp=sharing)
 
 #### Verbalizaciones obtenidas coworking "A":
 - “Tenemos una agenda, una lista en la que ya tenemos a los clientes frecuentes y 
@@ -99,7 +99,7 @@ Antes de nuestras visitas a los distintos coworks elaboramos una guía de entrev
 * Están abiertos a la digitalización del proceso, mientras se conserve el factor humano
   en el proceso de registro. 
 
-![Fotografías. Coworking A](img/GIFA.gif)
+![Fotografías. Coworking A](src/img/GIFA.gif)
 
 #### Sobre la entrevista con el coworking "B":
 Durante la entrevista, la encargada me comentó que les era muy importante que hubiera 
@@ -152,7 +152,7 @@ que tener un mayor control.
 * Este coworking valora el factor humano, ya que les parece primordial para brindar más
   seguridad a sus clientes. 
 
-![Fotografías. Coworking C](img/GIFC.gif)
+![Fotografías. Coworking C](src/img/GIFC.gif)
 
 #### Sobre la entrevista con el coworking "D":
 - Sus usuarios son jóvenes entre los 24 y 35 años.
@@ -172,7 +172,7 @@ que tener un mayor control.
 * No cuentan con los filtros de seguridad que encontramos en otros espacios,
   el acceso fue más sencillo y tomó menos tiempo. 
 
-![Fotografías. Coworking C](img/FotoD.jpeg)
+![Fotografías. Coworking C](src/img/FotoD.jpeg)
 
 ## Benchmark 
 
