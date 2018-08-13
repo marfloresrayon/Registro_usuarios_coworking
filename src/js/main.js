@@ -36,7 +36,7 @@ const employer = (company) => {
 };
 
 optionNameEmployeeDom.addEventListener('change', element => {
-  let nameCompany = optionNameCompanyDom.value;  
+  let nameCompany = optionNameCompanyDom.value;
   let nameEmployee = optionNameEmployeeDom.value;
   console.log(nameEmployee)
   emailEmployer(nameCompany, nameEmployee);
@@ -49,7 +49,7 @@ const emailEmployer = (company, employee) => {
     console.log(snapshot);
     snapshot.forEach(function(element) {
       let data = element.val();
-      console.log(data.'-LJfYIeNn-6CydKdDLjw')
+      console.log(data)
       optionEmailEmployeeDom.innerHTML += `
       <option value="${data.email}">${data.email}</option>`;
     });

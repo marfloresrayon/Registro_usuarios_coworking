@@ -31,6 +31,5 @@ database.ref('company').on('value', function(snapshot) {
       </tr>
       `;
     });
-  }  
+  }
 });
-  

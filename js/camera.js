@@ -12,10 +12,10 @@ const handleSuccess = (stream) => {
 
 
 captureButton.addEventListener('click', function() {
-  var context = snapshot.getContext('2d');
-  // Draw the video frame to the canvas.
-  context.drawImage(player, 0, 0, snapshotCanvas.width,
-    snapshotCanvas.height);
+  // var context = snapshot.getContext('2d');
+  // // Draw the video frame to the canvas.
+  // context.drawImage(player, 0, 0, snapshotCanvas.width,
+  //   snapshotCanvas.height);
   let dato = snapshotCanvas.toDataURL();
   console.log(dato);
   let refData = firebase.storage().ref();

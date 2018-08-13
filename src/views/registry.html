@@ -18,7 +18,7 @@
 <body>
     <main class="container-fluid text-center">
         <div class"row">
-         <a class="btn btn-primary left" href="Index.html" role="button">
+         <a class="btn btn-primary left" href="task.html" role="button">
              <i class="fas fa-arrow-circle-left"></i></a>
         <img class="center" id="img"src="../img/Logo/logo-ola.png">
         </div>
@@ -27,19 +27,21 @@
             <div class="input-group-prepend">
             <span class="input-group-text" id="name">Nombre</span>
             </div>
-            <input id="name-Visit" v-model="from_name"type="text" class="form-control" aria-label="Sizing example input" aria-describedby="name">     
+
+            <input id="name-Visit" v-model="from_name"type="text" class="form-control" aria-label="Sizing example input" aria-describedby="name">
+
         </div>
         <div class="input-group mb-3 col-11">
             <div class="input-group-prepend">
             <span class="input-group-text" id="email">Email</span>
             </div>
-            <input id="email-Visit" type="email" class="form-control" aria-label="Sizing example input" aria-describedby="email">     
+            <input id="email-Visit" type="email" class="form-control" aria-label="Sizing example input" aria-describedby="email">
         </div>
         <div class="input-group mb-3 col-11">
             <div class="input-group-prepend">
             <span class="input-group-text" id="company">Empresa</span>
             </div>
-            <input id="company-Visit" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="company">     
+            <input id="company-Visit" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="company">
         </div>
         <div id="infoCompany" class="input-group mb-3 col-11">
             <div class="input-group-prepend">
@@ -49,7 +51,7 @@
             <option selected>Empresa...</option>
 
             </select>
-            </div>  
+            </div>
         <div id="infoEmployee" class="input-group mb-3 col-11">
             <div class="input-group-prepend">
             <label class="input-group-text" for="optionNameEmployee">A quién visita:</label>
@@ -58,7 +60,7 @@
             <option selected>Empleado...</option>
         </select>
         </div>
-        
+
         <div id="infoEmail" class="input-group mb-3 col-11">
             <div class="input-group-prepend">
             <label class="input-group-text" for="optionEmailEmployee">Email:</label>
@@ -72,7 +74,7 @@
         <button @click="enviar" id="btn-Send" class="btn btn-primary rigth" type="button">
                 <i class="fas fa-arrow-circle-right"></i></button>
 </footer>
-   
+
     </main>
 
 

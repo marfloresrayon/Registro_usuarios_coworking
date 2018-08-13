@@ -67,7 +67,7 @@ btnSend.addEventListener('click', element => {
     time: timeRegistry()
   })
     .then(function() {
-      window.location.assign('camera.html');
+      window.location.assign('../views/camera.html');
     })
     .catch(function(error) {
       console.log(error);
@@ -94,7 +94,7 @@ const vue = new Vue({
         to_email: this.to_email,
         subject: this.subject,
       };
-          
+
       emailjs.send('gmail', 'solicitud_de_confirmacion', data)
         .then(function(response) {
           if (response.text === 'OK') {
