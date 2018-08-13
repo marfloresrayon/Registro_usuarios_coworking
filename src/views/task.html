@@ -18,25 +18,21 @@
 <body>
     <main class="container-fluid text-center">
         <div class"row">
-         <a class="btn btn-primary left" href="Index.html" role="button">
-             <i class="fas fa-arrow-circle-left"></i></a>
-        <img class="center" id="img"src="../img/Logo/logo-ola.png">
+          <a class="btn btn-primary left" href="Index.html" role="button">
+            <i class="fas fa-arrow-circle-left"></i></a>
+            <img class="center" id="img" src="../img/Logo/logo-ola.png">
         </div>
-    <section>
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Empresa que visita</th>
-                <th scope="col">Día</th>
-                <th scope="col">Hora</th>
-              </tr>
-            </thead>
-            <tbody id="info-Visit">
+        <section>
+          <div class="row">
+            <a class="btn btn-primary btn-lg" href="registry.html" role="button">Registrar Visitante</a>
+            <a class="btn btn-primary btn-lg" href="datavisit.html" role="button">Administrar</a>
+          </div>
+          <div class="row">
+            <button type="button" id="logout" class="btn btn-danger">Cerrar sesión<i class="fas fa-user ml-2"></i>
+            </button>
+          </div>
 
-            </tbody>
-          </table>
-    </section>
+        </section>
     </main>
 
 
@@ -45,9 +41,8 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-messaging.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-functions.js"></script>
+    <script src="../js/app.js"></script>
     <script src="../js/data.js"></script>
-    <script src="../js/main2.js"></script>
 </body>
 </html>

@@ -9,14 +9,14 @@ const nameCompany = () => {
   console.log(company);
   return company;
 };
-  
+
 // Función para obtener nombre del empleado
 const nameEmployee = () => {
   let employee = nameEmployeeDom.value;
   console.log(employee);
   return employee;
 };
- 
+
 // Función para obtener email del empleado
 const emailEmployee = () => {
   let emailEmployee = emailEmployeeDom.value;
@@ -50,5 +50,5 @@ const deleteEmployee = (keyEmployee) => {
     });
   } else {
     return false;
-  }  
+  }
 };
