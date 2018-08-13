@@ -176,7 +176,7 @@ que tener un mayor control.
 
 ## :chart_with_downwards_trend: Benchmark 
 
-
+![Benchmark](src/img/bench.png)
 
 El coworking se centra en la 
 creación de un espacio que fomente la colaboración, los conocimientos compartidos, 
