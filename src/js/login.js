@@ -1,7 +1,8 @@
 // Funcion de inicio de sesion de administrador
-const emailLogin = document.getElementById('email-login');
-const passwordLogin = document.getElementById('password-login');
-const login = document.getElementById('login');
+let emailLogin = document.getElementById('email-login');
+let passwordLogin = document.getElementById('password-login');
+let login = document.getElementById('login');
+let logout = document.getElementById('logout');
 
 // funcion para iniciar sesion con correo y contrasena ya registrados
 login.addEventListener('click', loginfunction = () => {

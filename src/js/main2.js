@@ -19,14 +19,15 @@ database.ref('company').on('value', function(snapshot) {
   let data = Object.keys(snapshot.val());
   console.log(data);
   for (let i = 0; i < data.length; i++) {
-    database.ref(`company/${data[i]}/employee`).on('child_added', function(val) {
+    database.ref(`company/${data[i]}`).on('child_added', function(val) {
       let dataCompany = val.val();
       infoCompany.innerHTML += `
       <tr>
         <th scope="row">${data[i]}</th>
         <td>${dataCompany.employee}</td>
         <td>${dataCompany.email}</td>
-        <td> <button onclick="deleteEmployee('${dataCompany.keyEmployee}')" type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+        <td> <a href="#" class="danger-text" onclick="deleteEmployee('${dataCompany.keyEmployee}')"><i class="far fa-trash-alt fa-xs icon"></i> Borrar</a>
+        </td>
         <td></td>
       </tr>
       `;
