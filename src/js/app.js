@@ -1,9 +1,3 @@
-const nameVisitDom = document.getElementById('name-Visit');
-const emailVisitDom = document.getElementById('email-Visit');
-const companyVisitDom = document.getElementById('company-Visit');
-const personVisitDom = document.getElementById('person-Visit');
-const btnSend = document.getElementById('btn-Send');
-
 // Función para obtener fecha
 const dateRegistry = () => {
   let dateFormat = new Date();
@@ -21,32 +15,42 @@ const timeRegistry = () => {
   return hours + ':' + minutes;
 };
 
+// Función para obtener nombre del visitante
 const nameVisit = () => {
   let name = nameVisitDom.value;
   console.log(name);
   return name;
 };
 
-
+// Función para obtener email del visitante
 const emailVisit = () => {
   let email = emailVisitDom.value;
   console.log(email);
   return email;
 };
 
+// Función para obtener el nombre de la empresa de procedencia
+const company = () => {
+  let companyName = optionNameCompanyDom.value;
+  console.log(companyName);
+  return companyName;
+};
+
+// Función para obtener nombre de la empresa que visita
 const companyVisit = () => {
   let company = companyVisitDom.value;
   console.log(company);
   return company;
 };
 
+// Función para obtener el nombre de la persona que visita
 const personVisit = () => {
-  let personVisit = personVisitDom.value;
+  let personVisit = optionNameEmployeeDom;
   console.log(personVisit);
   return personVisit;
 };
 
-// Registro de Visitantes
+// Registro de Visitantes en la base de datos
 btnSend.addEventListener('click', element => {
   firebase.database().ref('visit').push();
   let visitNew = firebase.database().ref('visit').push();
@@ -57,7 +61,8 @@ btnSend.addEventListener('click', element => {
     name: nameVisit(),
     email: emailVisit(),
     company: companyVisit(),
-    person: personVisit(),
+    companyVisit: company(),
+    employee: personVisit(),
     date: dateRegistry(),
     time: timeRegistry()
   })
