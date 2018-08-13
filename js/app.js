@@ -3,6 +3,9 @@ const emailVisitDom = document.getElementById('email-Visit');
 const companyVisitDom = document.getElementById('company-Visit');
 const personVisitDom = document.getElementById('person-Visit');
 const btnSend = document.getElementById('btn-Send');
+const emailLogin = document.getElementById('email-login');
+const passwordLogin = document.getElementById('password-login');
+
 
 // Función para obtener fecha
 const dateRegistry = () => {
@@ -60,10 +63,6 @@ btnSend.addEventListener('click', element => {
     person: personVisit(),
     date: dateRegistry(),
     time: timeRegistry()
-<<<<<<< HEAD
-  });
-  window.location.assign('camera.html');
-=======
   })
     .then(function() {
       window.location.assign('camera.html');
@@ -71,5 +70,12 @@ btnSend.addEventListener('click', element => {
     .catch(function(error) {
       console.log(error);
     });
->>>>>>> upstream/master
 });
+
+
+// Inicio de sesion de administrador
+// let loginAdmin = document.getElementById('start');
+//
+// loginAdmin.addEventListener('click', () => {
+//
+// });
