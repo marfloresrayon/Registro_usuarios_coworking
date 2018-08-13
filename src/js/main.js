@@ -3,6 +3,7 @@ const emailVisitDom = document.getElementById('email-Visit');
 const companyVisitDom = document.getElementById('company-Visit');
 const optionNameCompanyDom = document.getElementById('optionNameCompany');
 const optionNameEmployeeDom = document.getElementById('optionNameEmployee');
+const optionEmailEmployeeDom = document.getElementById('optionEmailEmployee');
 const btnSend = document.getElementById('btn-Send');
 
 database.ref('company').on('value', function(snapshot) {
@@ -15,8 +16,8 @@ database.ref('company').on('value', function(snapshot) {
   }
 });
 
-optionNameCompany.addEventListener('change', element => {
-  let nameCompany = optionNameCompany.value;
+optionNameCompanyDom.addEventListener('change', element => {
+  let nameCompany = optionNameCompanyDom.value;
   console.log(nameCompany)
   employer(nameCompany);
 });
@@ -30,6 +31,27 @@ const employer = (company) => {
       let data = element.val();
       optionNameEmployeeDom.innerHTML += `
       <option value="${data.employee}">${data.employee}</option>`;
+    });
+  });
+};
+
+optionNameEmployeeDom.addEventListener('change', element => {
+  let nameCompany = optionNameCompanyDom.value;  
+  let nameEmployee = optionNameEmployeeDom.value;
+  console.log(nameEmployee)
+  emailEmployer(nameCompany, nameEmployee);
+});
+
+
+// Función para traer email del empleado
+const emailEmployer = (company, employee) => {
+  database.ref(`company/${company}`).on('value', function(snapshot) {
+    console.log(snapshot);
+    snapshot.forEach(function(element) {
+      let data = element.val();
+      console.log(data.'-LJfYIeNn-6CydKdDLjw')
+      optionEmailEmployeeDom.innerHTML += `
+      <option value="${data.email}">${data.email}</option>`;
     });
   });
 };

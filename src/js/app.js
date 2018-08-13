@@ -73,3 +73,38 @@ btnSend.addEventListener('click', element => {
       console.log(error);
     });
 });
+
+// Función para enviar correo
+(function() {
+  emailjs.init('user_8MQ7b82AeEEAsfkQ5PPUt');
+})();
+const vue = new Vue({
+  el: '#app',
+  data() {
+    return {
+      from_name: '',
+      to_email: '',
+      subject: 'Olá, en recepción te esperan',
+    };
+  },
+  methods: {
+    enviar() {
+      let data = {
+        from_name: this.from_name,
+        to_email: this.to_email,
+        subject: this.subject,
+      };
+          
+      emailjs.send('gmail', 'solicitud_de_confirmacion', data)
+        .then(function(response) {
+          if (response.text === 'OK') {
+            alert('El correo se ha enviado de forma exitosa');
+          }
+          console.log('SUCCESS. status=%d, text=%s', response.status, response.text);
+        }, function(err) {
+          alert('Ocurrió un problema al enviar el correo');
+          console.log('FAILED. error=', err);
+        });
+    }
+  }
+});

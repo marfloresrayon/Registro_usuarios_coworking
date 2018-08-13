@@ -7,40 +7,47 @@
     <title>Document</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Yanone+Kaffeesatz" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 
-    
 </head>
 <body>
     <main class="container-fluid text-center">
         <div class"row">
-            <img src="../img/Logo/logo-ola.png">
+         <a class="btn btn-primary left" href="Index.html" role="button">
+             <i class="fas fa-arrow-circle-left"></i></a>
+        <img class="center" id="img"src="../img/Logo/logo-ola.png">
         </div>
-        <div class"row">
-            <h1>Bienvenida a</h1>
-            <h3>TERMINAL 1</h3>
-            <a class="btn btn-primary btn-lg" href="registry.html" role="button">Iniciar 
-            <i class="fas fa-pen ml-2"></i></a>
-        </div>
-        <div class="row">
-        <button type="button" id="start" class="btn btn-danger">Administrador  <i class="fas fa-user ml-2"></i>
-        </button>
-        </div>
+    <section>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Empresa que visita</th>
+                <th scope="col">Día</th>
+                <th scope="col">Hora</th>
+              </tr>
+            </thead>
+            <tbody id="info-Visit">
+              
+            </tbody>
+          </table>
+    </section>
     </main>
-    
+
 
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-functions.js"></script>
     <script src="../js/data.js"></script>
+    <script src="../js/main2.js"></script>
 </body>
 </html>

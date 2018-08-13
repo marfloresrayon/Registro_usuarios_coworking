@@ -30,16 +30,24 @@ btnRegistry.addEventListener('click', element => {
   let employeeNew = firebase.database().ref(`company/${company}/employee`).push();
   console.log(employeeNew);
   let keyEmployee = employeeNew.getKey();
+  console.log(keyEmployee);
   firebase.database().ref(`company/${company}/employee/${keyEmployee}`).set({
     employee: nameEmployee(),
-    email: emailEmployee()
+    email: emailEmployee(),
+    keyEmployee: keyEmployee
   });
 });
 
 // Eliminar registro de empleado (en construcción)
-const deletePost = (keyEmployee) => {
+const deleteEmployee = (keyEmployee) => {
   if (confirm('¿Quere eliminar este registro?')) {
-    database.ref('company').child(keyEmployee).remove();
+    database.ref('company').on('value', function(snapshot) {
+      let data = Object.keys(snapshot.val());
+      console.log(data);
+      for (let i = 0; i < data.length; i++) {
+        database.ref(`company/${data[i]}/employee`).child(keyEmployee).remove();
+      }
+    });
   } else {
     return false;
   }  
