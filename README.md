@@ -182,6 +182,13 @@ que tener un mayor control.
 
 ![Personas](src/img/persona.png)
 
+El acercamiento por medio de entrevistas a los diferentes espacios de 
+coworking nos llevo a generar las personas que presentamos. Las tuvimos en
+mente al generar nuestra solución. 
+
+## MVP
+
+Decidimos enfocarnos en las siguientes funcionalidades para nuestros
 El coworking se centra en la 
 creación de un espacio que fomente la colaboración, los conocimientos compartidos, 
 la **innovación y la experiencia de usuario**. Haciendo énfasis en esta última parte, 
