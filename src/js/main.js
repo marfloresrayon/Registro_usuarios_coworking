@@ -49,7 +49,8 @@ const emailEmployer = (company, employee) => {
     console.log(snapshot);
     snapshot.forEach(function(element) {
       let data = element.val();
-      console.log(data.'-LJfYIeNn-6CydKdDLjw')
+      let dataKey = Object.keys(data);
+      console.log(dataKey)
       optionEmailEmployeeDom.innerHTML += `
       <option value="${data.email}">${data.email}</option>`;
     });

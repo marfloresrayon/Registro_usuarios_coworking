@@ -64,7 +64,8 @@ btnSend.addEventListener('click', element => {
     companyVisit: company(),
     employee: personVisit(),
     date: dateRegistry(),
-    time: timeRegistry()
+    time: timeRegistry(),
+    keyVisit: keyVisit
   })
     .then(function() {
       window.location.assign('camera.html');
