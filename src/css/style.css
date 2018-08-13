@@ -1,10 +1,11 @@
 img {
-    width: 18rem;
+    width: 24rem;
     padding: 2rem;
     align-content: center
 }
 
 h3 {
+    font-size: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -14,7 +15,7 @@ h3 {
 }
 
 #img{
-    width: 10rem;
+    width: 15rem;
     float: center;
     text-align: center;
 }
@@ -22,11 +23,37 @@ h3 {
 .rigth{
     float: right;
     text-align: right;
-    margin-top: 3rem;
+    margin-top: 8rem;
 }
 
 .left{
     float: left;
     text-align: left;
+    margin-top: 2rem;
+}
+
+#img-nav {
+    width: 7rem;
+}
+
+h5 {
+    margin-top: 2rem;
+    color: turquoise;
+    font-family: Impact;
+}
+
+#logout {
+    margin-top: 20rem;
+}
+
+.btn-center{
+    margin-top: 5rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+.margin-top{
     margin-top: 2rem;
 }
