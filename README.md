@@ -197,8 +197,6 @@ colaboración, el compartir conocimientos, la **innovación y la experiencia de 
 
 ## :bar_chart: Historias de usuario
 
-
-
 ## :art: Proceso de diseño 
 
 ![Logo](src/img/Logo/logola.png)
