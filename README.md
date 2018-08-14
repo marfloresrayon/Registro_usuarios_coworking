@@ -1,6 +1,6 @@
-# :wave: FastPass. Registro de usuarios para coworking
+# :runner: FastPass. Registro de usuarios para coworking
 
-## :briefcase: Contexto
+## :clipboard: Contexto
 
 Actualmente operan cerca de 74 espacios de coworking en México, han ganado la 
 preferencia de los emprendedores ya que les permite hacer negocios de manera 
@@ -19,13 +19,13 @@ mexicanas suman 3.9 millones y representan 97% del ecosistema en México, de acu
 con el Instituto Nacional de Estadística y Geografía (Inegi).  
 
 
-## El problema 
+## :x: El problema 
 
 * Nuesto equipo fue encomendado con la tarea de crear un registro de usuarios diseñado 
 para un espacio de coworking. 
 * Tiempo disponible: 1 semana.
 
-### Conocimiento y delimitación del problema 
+### :dart: Conocimiento y delimitación del problema 
 
 Decidimos dirigimos a 4 espacios distintos, con la intención de conocer los problemas 
 específicos que se encuentran en la experiencia de ingreso a un coworking en la
@@ -41,7 +41,7 @@ en los cuales llevamos a cabo entrevistas con el personal de recepción de cada 
 *en Google Drive, por lo que, para poder escucharlos pedimos que soliciten hacerlo por ese medio.*
 
 
-#### Guía de entrevista 
+#### :page_facing_up: Guía de entrevista 
 
 Antes de nuestras visitas a los distintos coworks elaboramos una guía de entrevista:
 
@@ -58,7 +58,7 @@ Antes de nuestras visitas a los distintos coworks elaboramos una guía de entrev
 
 [Transcripción de las entrevistas a los espacios de coworking "A" "B" "C" y "D"](https://drive.google.com/drive/folders/1ocgHERLB35E4b09Q7KZS7mcEPTufXOJD?usp=sharing)
 
-#### Verbalizaciones obtenidas coworking "A":
+#### :information_desk_person: Verbalizaciones obtenidas coworking "A":
 - “Tenemos una agenda, una lista en la que ya tenemos a los clientes frecuentes y 
   dependiendo de esa lista uno ya con el tiempo lo va ubicando, y cuando son empresas 
   nuevas se les pide su registro y nada más cuando vayan llegando se les pide su hora 
@@ -87,7 +87,7 @@ Antes de nuestras visitas a los distintos coworks elaboramos una guía de entrev
   a tal hora, tal día, y ya, pero bueno pasa lo mismo, sería como mínimo mi trabajo 
   que yo haría. Sería como mejor, pero unas por otras.”
 
-#### Insights obtenidas coworking "A":
+#### :ear: Insights obtenidas coworking "A":
 * El proceso de ingreso no se encuentra totalmente digitalizado. 
 * El cowork está en proceso de expansión, al tener un espacio mayor con más visitantes
   notan que el método de ingreso es un área de mejora. 
@@ -101,7 +101,7 @@ Antes de nuestras visitas a los distintos coworks elaboramos una guía de entrev
 
 ![Fotografías. Coworking A](src/img/GIFA.gif)
 
-#### Sobre la entrevista con el coworking "B":
+#### :man: Sobre la entrevista con el coworking "B":
 Durante la entrevista, la encargada me comentó que les era muy importante que hubiera 
 personas que recibieran a la gente en la puerta, que uno de los mayores valores que ofrecen 
 como coworking es la seguridad de las personas que trabajan en él y eso lo hacen notar 
@@ -113,7 +113,7 @@ cuando Laboratoria ocupe uno de los pisos que habrán implementado Envoy y el si
 torniquetes ya que, como me comentó, la entrada y salida de personas será mayor y tendrán 
 que tener un mayor control.  
 
-#### Insights obtenidas coworking "B":
+#### :ear: Insights obtenidas coworking "B":
 * El coworking valora la seguridad que ofrece a sus colaboradores, por lo que
   contar con personal de seguridad en la entrada es primordial, aunque su 
   proceso de registro esté, en su mayor parte, digitalizado. 
@@ -125,7 +125,7 @@ que tener un mayor control.
 * Al personal de recepción puede parecerle complicado el manejo de esta herramienta, 
   dependiendo del nivel de conocimiento tecnológico que posean. 
 
-#### Sobre la entrevista con el coworking "C":
+#### :man: Sobre la entrevista con el coworking "C":
 - Requerimientos de registro para los usuarios colaboradores del coworking: 
   Ninguno, dado que son colaboradores entran de manera directa.
 - Edad promedio de los usuarios: Entre 25 a 45 años.
@@ -142,7 +142,7 @@ que tener un mayor control.
   a quien se visita (o su empresa) confirma que no conoce a la visita y por lo tanto 
   no puede recibirla. 
 
-#### Insights obtenidas coworking "C":
+#### :ear: Insights obtenidas coworking "C":
 * El proceso de registro de usuario no está digitalizado.
 * El personal de recepción no se limita a esta área, por lo que también llevan a cabo 
   tareas en otras áreas del coworking.
@@ -154,7 +154,7 @@ que tener un mayor control.
 
 ![Fotografías. Coworking C](src/img/GIFC.gif)
 
-#### Sobre la entrevista con el coworking "D":
+#### :information_desk_person: Sobre la entrevista con el coworking "D":
 - Sus usuarios son jóvenes entre los 24 y 35 años.
 - El proceso de registro toma un minuto, no solicitan identificación y 
   la información que solicitan en su formato es el nombre y el horario de 
@@ -162,7 +162,7 @@ que tener un mayor control.
 - Es el coworking más pequeño de los que visitamos, su proceso no se 
   encuentra digitalizado.
 
-#### Insights obtenidas coworking "D":
+#### :ear: Insights obtenidas coworking "D":
 * El proceso de registro es percibido por el personal de recepción como 
   tedioso y obsoleto. La información que se escribe en el libro de registro 
   se lleva a un Excel para procesarla. Por lo que implica más trabajo con 
@@ -174,13 +174,21 @@ que tener un mayor control.
 
 ![Fotografías. Coworking C](src/img/FotoD.jpeg)
 
-## Benchmark 
+## :chart_with_downwards_trend: Benchmark 
 
+![Benchmark](src/img/bench.png)
 
+## :woman::man: Personas
 
+![Personas](src/img/persona.png)
 
+El acercamiento por medio de entrevistas a los diferentes espacios de 
+coworking nos llevo a generar las personas que presentamos. Las tuvimos en
+mente al generar nuestra solución. 
 
+## MVP
 
+Decidimos enfocarnos en las siguientes funcionalidades para nuestros
 El coworking se centra en la 
 creación de un espacio que fomente la colaboración, los conocimientos compartidos, 
 la **innovación y la experiencia de usuario**. Haciendo énfasis en esta última parte, 
