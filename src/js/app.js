@@ -1,3 +1,5 @@
+const btnSend = document.getElementById('btn-Send');
+
 // Función para obtener fecha
 const dateRegistry = () => {
   let dateFormat = new Date();
@@ -18,42 +20,39 @@ const timeRegistry = () => {
 // Función para obtener nombre del visitante
 const nameVisit = () => {
   let name = nameVisitDom.value;
+  console.log(name);
   return name;
-};
-
-// Función para obtener email del visitante
-const emailVisit = () => {
-  let email = emailVisitDom.value;
-  return email;
 };
 
 // Función para obtener el nombre de la empresa de procedencia
 const company = () => {
   let companyName = optionNameCompanyDom.value;
+  console.log(companyName);
   return companyName;
 };
 
 // Función para obtener nombre de la empresa que visita
 const companyVisit = () => {
   let company = companyVisitDom.value;
+  console.log(company);
   return company;
 };
 
 // Función para obtener el nombre de la persona que visita
 const personVisit = () => {
   let personVisit = optionNameEmployeeDom;
+  console.log(personVisit);
   return personVisit;
 };
 
 // Registro de Visitantes en la base de datos
 btnSend.addEventListener('click', element => {
   let name = nameVisitDom.value;
-  let email = emailVisitDom.value;
   let companyName = companyVisitDom.value;
   let companyVisite = optionNameCompanyDom.value;
   let employee = optionNameEmployeeDom.value;
   let emailEmployee = optionEmailEmployeeDom.value;
-  if (name === '' & email === '' & companyName === '' & companyVisite === 'Empresa...'
+  if (name === '' & companyName === '' & companyVisite === 'Empresa...'
   & employee === 'Empleado...' & emailEmployee === '') {
     alert('Todos los campos deben estar llenos');
   } else {
@@ -62,15 +61,15 @@ btnSend.addEventListener('click', element => {
     let keyVisit = visitNew.getKey();
     firebase.database().ref(`visit/${keyVisit}`).set({
       name: name,
-      email: email,
       company: companyName,
       companyVisit: companyVisite,
       employee: employee,
       date: dateRegistry(),
       time: timeRegistry(),
-      keyVisit: keyVisit
+      keyVisit: keyVisit,
+      status: 'En el edificio'
     })
-      .then(function() {
+      .then(function(){
         window.location.assign('../views/camera.html');
       })
       .catch(function(error) {
@@ -78,6 +77,7 @@ btnSend.addEventListener('click', element => {
       });
   }
 });
+
 // Función para enviar correo
 (function() {
   emailjs.init('user_8MQ7b82AeEEAsfkQ5PPUt');
@@ -86,16 +86,16 @@ const vue = new Vue({
   el: '#app',
   data() {
     return {
-      from_name: '',
-      to_email: '',
+      fromName: '',
+      toEmail: '',
       subject: 'Olá, en recepción te esperan',
     };
   },
   methods: {
     enviar() {
       let data = {
-        from_name: this.from_name,
-        to_email: this.to_email,
+        fromName: this.fromName,
+        toEmail: this.toEmail,
         subject: this.subject,
       };
 

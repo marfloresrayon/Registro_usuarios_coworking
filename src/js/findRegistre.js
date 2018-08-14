@@ -4,12 +4,11 @@ const newUserPrint = () => {
   cardPass.innerHTML =
     `<div id="cardPass" class="card publication">
       <div  class="card-body">
-        <p>Hola</p>
-        <p>kdkd</p>
-        <p>ldadklkf</p>
-        <p>lkadlkf</p>
-        <p>lñksdajkfl</p>
-
+        <p>${name}</p>
+        <p>${date}</p>
+        <p>${time}f</p>
+        <p>${keyVisit}</p>
+        <p>${companyName}</p>
       </div>
     </div>`;
 };
