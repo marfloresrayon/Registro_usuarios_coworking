@@ -1,3 +1,5 @@
+const btnSend = document.getElementById('btn-Send');
+
 // Función para obtener fecha
 const dateRegistry = () => {
   let dateFormat = new Date();
@@ -20,13 +22,6 @@ const nameVisit = () => {
   let name = nameVisitDom.value;
   console.log(name);
   return name;
-};
-
-// Función para obtener email del visitante
-const emailVisit = () => {
-  let email = emailVisitDom.value;
-  console.log(email);
-  return email;
 };
 
 // Función para obtener el nombre de la empresa de procedencia
@@ -52,26 +47,35 @@ const personVisit = () => {
 
 // Registro de Visitantes en la base de datos
 btnSend.addEventListener('click', element => {
-  firebase.database().ref('visit').push();
-  let visitNew = firebase.database().ref('visit').push();
-  console.log(visitNew);
-  let keyVisit = visitNew.getKey();
-  console.log(keyVisit);
-  firebase.database().ref(`visit/${keyVisit}`).set({
-    name: nameVisit(),
-    email: emailVisit(),
-    company: companyVisit(),
-    companyVisit: company(),
-    employee: personVisit(),
-    date: dateRegistry(),
-    time: timeRegistry()
-  })
-    .then(function() {
-      window.location.assign('../views/camera.html');
+  let name = nameVisitDom.value;
+  let companyName = companyVisitDom.value;
+  let companyVisite = optionNameCompanyDom.value;
+  let employee = optionNameEmployeeDom.value;
+  let emailEmployee = optionEmailEmployeeDom.value;
+  if (name === '' & companyName === '' & companyVisite === 'Empresa...'
+  & employee === 'Empleado...' & emailEmployee === '') {
+    alert('Todos los campos deben estar llenos');
+  } else {
+    firebase.database().ref('visit').push();
+    let visitNew = firebase.database().ref('visit').push();
+    let keyVisit = visitNew.getKey();
+    firebase.database().ref(`visit/${keyVisit}`).set({
+      name: name,
+      company: companyName,
+      companyVisit: companyVisite,
+      employee: employee,
+      date: dateRegistry(),
+      time: timeRegistry(),
+      keyVisit: keyVisit,
+      status: 'En el edificio'
     })
-    .catch(function(error) {
-      console.log(error);
-    });
+      .then(function(){
+        window.location.assign('../views/camera.html');
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  }
 });
 
 // Función para enviar correo
@@ -82,16 +86,16 @@ const vue = new Vue({
   el: '#app',
   data() {
     return {
-      from_name: '',
-      to_email: '',
+      fromName: '',
+      toEmail: '',
       subject: 'Olá, en recepción te esperan',
     };
   },
   methods: {
     enviar() {
       let data = {
-        from_name: this.from_name,
-        to_email: this.to_email,
+        fromName: this.fromName,
+        toEmail: this.toEmail,
         subject: this.subject,
       };
 

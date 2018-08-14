@@ -28,14 +28,8 @@
             <span class="input-group-text" id="name">Nombre</span>
             </div>
 
-            <input id="name-Visit" v-model="from_name"type="text" class="form-control" aria-label="Sizing example input" aria-describedby="name">
+            <input id="name-Visit" v-model="fromName"type="text" class="form-control" aria-label="Sizing example input" aria-describedby="name">
 
-        </div>
-        <div class="input-group mb-3 col-11 margin-top">
-            <div class="input-group-prepend">
-            <span class="input-group-text" id="email">Email</span>
-            </div>
-            <input id="email-Visit" type="email" class="form-control" aria-label="Sizing example input" aria-describedby="email">
         </div>
         <div class="input-group mb-3 col-11 margin-top">
             <div class="input-group-prepend">
@@ -65,7 +59,7 @@
             <div class="input-group-prepend">
             <label class="input-group-text" for="optionEmailEmployee">Email:</label>
         </div>
-        <select class="custom-select" id="optionEmailEmployee">
+        <select class="custom-select" id="optionEmailEmployee" v-model="toEmail">
         </select>
         </div>
     </section>
@@ -82,11 +76,10 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
-    <script src="../js/data.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/findRegistre.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
