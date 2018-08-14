@@ -1,4 +1,4 @@
-# :runner: FastPass. Registro de usuarios para coworking
+# :wave: Olá. Registro de usuarios para coworking
 
 ## :clipboard: Contexto
 
@@ -178,6 +178,8 @@ que tener un mayor control.
 
 ![Benchmark](src/img/bench.png)
 
+![User flow Envoy](src/img/UserFlow/envoyFlow.png)
+
 ## :woman::man: Personas
 
 ![Personas](src/img/persona.png)
@@ -186,31 +188,36 @@ El acercamiento por medio de entrevistas a los diferentes espacios de
 coworking nos llevo a generar las personas que presentamos. Las tuvimos en
 mente al generar nuestra solución. 
 
-## Historias de usuario
+Creemos que el coworking se centra en la creación de un espacio que fomente la 
+colaboración, el compartir conocimientos, la **innovación y la experiencia de usuario**. 
 
-## Proceso de diseño 
+## :star: Épicas
 
-## Wireframe
+![Fotografía épicas](src/img/epic.jpg)
 
-## Mockup
-
-
-## Prototipo clickable 
-El coworking se centra en la 
-creación de un espacio que fomente la colaboración, los conocimientos compartidos, 
-la **innovación y la experiencia de usuario**. Haciendo énfasis en esta última parte, 
-decidimos 
+## :bar_chart: Historias de usuario
 
 
-La demanda de este tipo de espacios se ha visto favorecida por el crecimiento de los **sectores**
-**creativos y tecnológicos**.
 
-Crear un sistema de registro de usuarios para un espacio de coworking que aborde las siguientes problemáticas:
+## :art: Proceso de diseño 
 
-#2bbbad
+![Logo](src/img/Logo/logola.png)
 
+![Logo](src/img/Logo/logo-pen.png)
 
-### Bibliografía
+### :pencil2: Wireframe
+
+![Wireframes](src/img/UserFlow/UserFlow3.png)
+
+### :iphone: Mockup
+
+![Mockups](src/img/Wireframe/wireFrame.png)
+
+### :point_right: Prototipo clickable 
+
+## :two_women_holding_hands: :computer: User testing
+
+### :green_book: Bibliografía
 
 [¿Cuál es el siguiente nivel de coworking?.Forbes](https://www.forbes.com.mx/cual-es-el-siguiente-nivel-de-coworking/)
 
