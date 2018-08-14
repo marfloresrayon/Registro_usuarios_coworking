@@ -186,9 +186,16 @@ El acercamiento por medio de entrevistas a los diferentes espacios de
 coworking nos llevo a generar las personas que presentamos. Las tuvimos en
 mente al generar nuestra solución. 
 
-## MVP
+## Historias de usuario
 
-Decidimos enfocarnos en las siguientes funcionalidades para nuestros
+## Proceso de diseño 
+
+## Wireframe
+
+## Mockup
+
+
+## Prototipo clickable 
 El coworking se centra en la 
 creación de un espacio que fomente la colaboración, los conocimientos compartidos, 
 la **innovación y la experiencia de usuario**. Haciendo énfasis en esta última parte, 
@@ -200,16 +207,8 @@ La demanda de este tipo de espacios se ha visto favorecida por el crecimiento de
 
 Crear un sistema de registro de usuarios para un espacio de coworking que aborde las siguientes problemáticas:
 
-### Usuarios:
+#2bbbad
 
-Personas entre los X y X años, que trabajan en el área de recepción de un espacio de coworking,
-realizando el registro de los usuarios que acceden al mismo. Tienen conocimiento básico sobre 
-tecnología, saben hacer uso de equipos de cómputo y dispositivos móviles (ipads) para realizar
-tareas poco complejas. 
-
-## Prototipo clickeable
-
-![FastPass]("")
 
 ### Bibliografía
 
