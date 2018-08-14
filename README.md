@@ -198,8 +198,6 @@ colaboración, el compartir conocimientos, la **innovación y la experiencia de*
 
 ## :bar_chart: Historias de usuario
 
-
-
 ## :art: Proceso de diseño 
 
 ![Logo](src/img/Logo/logola.png)
@@ -216,7 +214,7 @@ colaboración, el compartir conocimientos, la **innovación y la experiencia de*
 
 ### :point_right: Prototipo clickable 
 
-*Prototipo en desarrollo en Marvel App*
+[Prototipo en proceso](https://marvelapp.com/33jh9ja)
 
 ## :two_women_holding_hands: :computer: User testing
 
@@ -246,6 +244,8 @@ de las observaciones obtenidas:
   parte antes de abrirla, sólo la abrí por curiosidad".
 * "Como cowork el que nos proporcionen su correo es poco útil".
 * "El poder tener la foto del visitante es super importante, eso me gusta".
+* "Yo entiendo que los trabajadores del coworking son el recepcionista y así, lo que registras
+  son los miembros del coworking".
 
 Tomamos en cuenta las observaciones compartidas y las aplicamos en la mejora de nuestra
 plataforma, lo cual seguiremos haciendo para nuestro siguiente alcance. 
