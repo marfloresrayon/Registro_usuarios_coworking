@@ -4,7 +4,6 @@ const companyVisitDom = document.getElementById('company-Visit');
 const optionNameCompanyDom = document.getElementById('optionNameCompany');
 const optionNameEmployeeDom = document.getElementById('optionNameEmployee');
 const optionEmailEmployeeDom = document.getElementById('optionEmailEmployee');
-const btnSend = document.getElementById('btn-Send');
 
 database.ref('company').on('value', function(snapshot) {
   let data = Object.keys(snapshot.val());
@@ -47,3 +46,4 @@ const emailEmployer = (company, nameEmployee) => {
     });
   });
 };
+

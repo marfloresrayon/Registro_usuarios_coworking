@@ -25,6 +25,7 @@ const emailEmployee = () => {
 
 // Registro de Empleados en la base de datos
 btnRegistry.addEventListener('click', element => {
+  let status = 'En el edificio';
   let company = nameCompanyDom.value;
   let employee = nameEmployeeDom.value;
   let email = emailEmployeeDom.value;
@@ -34,20 +35,14 @@ btnRegistry.addEventListener('click', element => {
   let keyEmployee = employeeNew.getKey();
   console.log(keyEmployee);
   firebase.database().ref(`company/${company}/${keyEmployee}`).set({
+    company: company,
     employee: employee,
     email: email,
-    keyEmployee: keyEmployee
+    keyEmployee: keyEmployee,
+    
   });
   nameCompanyDom.value = '';
   nameEmployeeDom.value = '';
   emailEmployeeDom.value = '';
 });
 
-// Eliminar registro de empleado (en construcción)
-const deleteEmployee = (keyEmployee) => {
-  if (confirm('¿Quere eliminar este registro?')) {
-    database.ref('company').child(keyEmployee).remove();
-  } else {
-    return false;
-  }
-};

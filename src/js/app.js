@@ -1,3 +1,5 @@
+const btnSend = document.getElementById('btn-Send');
+
 // Función para obtener fecha
 const dateRegistry = () => {
   let dateFormat = new Date();
@@ -21,12 +23,6 @@ const nameVisit = () => {
   return name;
 };
 
-// Función para obtener email del visitante
-const emailVisit = () => {
-  let email = emailVisitDom.value;
-  return email;
-};
-
 // Función para obtener el nombre de la empresa de procedencia
 const company = () => {
   let companyName = optionNameCompanyDom.value;
@@ -48,12 +44,11 @@ const personVisit = () => {
 // Registro de Visitantes en la base de datos
 btnSend.addEventListener('click', element => {
   let name = nameVisitDom.value;
-  let email = emailVisitDom.value;
   let companyName = companyVisitDom.value;
   let companyVisite = optionNameCompanyDom.value;
   let employee = optionNameEmployeeDom.value;
   let emailEmployee = optionEmailEmployeeDom.value;
-  if (name === '' & email === '' & companyName === '' & companyVisite === 'Empresa...'
+  if (name === '' & companyName === '' & companyVisite === 'Empresa...'
   & employee === 'Empleado...' & emailEmployee === '') {
     alert('Todos los campos deben estar llenos');
   } else {
@@ -62,13 +57,13 @@ btnSend.addEventListener('click', element => {
     let keyVisit = visitNew.getKey();
     firebase.database().ref(`visit/${keyVisit}`).set({
       name: name,
-      email: email,
       company: companyName,
       companyVisit: companyVisite,
       employee: employee,
       date: dateRegistry(),
       time: timeRegistry(),
-      keyVisit: keyVisit
+      keyVisit: keyVisit,
+      status: 'En el edificio'
     })
       .then(function() {
         window.location.assign('../views/camera.html');
@@ -86,16 +81,16 @@ const vue = new Vue({
   el: '#app',
   data() {
     return {
-      from_name: '',
-      to_email: '',
+      fromName: '',
+      toEmail: '',
       subject: 'Olá, en recepción te esperan',
     };
   },
   methods: {
     enviar() {
       let data = {
-        from_name: this.from_name,
-        to_email: this.to_email,
+        fromName: this.fromName,
+        toEmail: this.toEmail,
         subject: this.subject,
       };
 
