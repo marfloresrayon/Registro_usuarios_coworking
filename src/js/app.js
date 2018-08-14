@@ -20,24 +20,28 @@ const timeRegistry = () => {
 // Función para obtener nombre del visitante
 const nameVisit = () => {
   let name = nameVisitDom.value;
+  console.log(name);
   return name;
 };
 
 // Función para obtener el nombre de la empresa de procedencia
 const company = () => {
   let companyName = optionNameCompanyDom.value;
+  console.log(companyName);
   return companyName;
 };
 
 // Función para obtener nombre de la empresa que visita
 const companyVisit = () => {
   let company = companyVisitDom.value;
+  console.log(company);
   return company;
 };
 
 // Función para obtener el nombre de la persona que visita
 const personVisit = () => {
   let personVisit = optionNameEmployeeDom;
+  console.log(personVisit);
   return personVisit;
 };
 
@@ -65,7 +69,7 @@ btnSend.addEventListener('click', element => {
       keyVisit: keyVisit,
       status: 'En el edificio'
     })
-      .then(function() {
+      .then(function(){
         window.location.assign('../views/camera.html');
       })
       .catch(function(error) {
@@ -73,6 +77,7 @@ btnSend.addEventListener('click', element => {
       });
   }
 });
+
 // Función para enviar correo
 (function() {
   emailjs.init('user_8MQ7b82AeEEAsfkQ5PPUt');
