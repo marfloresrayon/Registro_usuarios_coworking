@@ -189,13 +189,16 @@ coworking nos llevo a generar las personas que presentamos. Las tuvimos en
 mente al generar nuestra solución. 
 
 Creemos que el coworking se centra en la creación de un espacio que fomente la 
-colaboración, el compartir conocimientos, la **innovación y la experiencia de usuario**. 
+colaboración, el compartir conocimientos, la **innovación y la experiencia de**
+**usuario**. 
 
 ## :star: Épicas
 
 ![Fotografía épicas](src/img/epic.jpg)
 
 ## :bar_chart: Historias de usuario
+
+
 
 ## :art: Proceso de diseño 
 
@@ -213,7 +216,39 @@ colaboración, el compartir conocimientos, la **innovación y la experiencia de 
 
 ### :point_right: Prototipo clickable 
 
+*Prototipo en desarrollo en Marvel App*
+
 ## :two_women_holding_hands: :computer: User testing
+
+Llevamos a cabo 5 pruebas de usuario para testear el flujo de usuario de "Olá" y 
+conocer los touch points y los games points que podría generar la plataforma. 
+Realizamos las pruebas con usuarias de los 25 a los 37 años, estas fueron algunas
+de las observaciones obtenidas:
+
+* "Necesitan agrandar la letra, es muy poco legible en el Ipad"
+* "No me queda claro qué voy a registrar en la parte de Administración"
+* "¿Cómo puedo hacer logout en el área de administración?"
+* El flujo en el llenado del formulario de registro se detenía por varios segundo ante
+  el input de "Empresa".
+* "No me quedaba claro qué debía poner en la primera "Empresa".
+* "Me parece que es una plataforma diseñada para que alguien más sea quien registre
+  a las personas, para que sea más ágil porque ya conoce qué va en cada campo y así
+  tome menos tiempo".
+* "No puedo leer la letra" [versión responsive]
+* "En la barra de Administración es necesario identificar en qué apartado estás, porque
+  no lo señala".
+* "Estaría bien un botón de atrás en la parte de la Administración".
+* "Me confunde que haya dos partes de registro, podrían cambiarle el nombre a la de los 
+  visitantes".
+* "Algo muy útil para un cowork es saber la hora de salida de los visitantes, me parece 
+  importante que lo agreguen".
+* "El menú de la parte de Administración debe ser más detallado, no sé de qué trata cada
+  parte antes de abrirla, sólo la abrí por curiosidad".
+* "Como cowork el que nos proporcionen su correo es poco útil".
+* "El poder tener la foto del visitante es super importante, eso me gusta".
+
+Tomamos en cuenta las observaciones compartidas y las aplicamos en la mejora de nuestra
+plataforma, lo cual seguiremos haciendo para nuestro siguiente alcance. 
 
 ### :green_book: Bibliografía
 
