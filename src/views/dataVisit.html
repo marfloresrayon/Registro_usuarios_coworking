@@ -1,86 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Yanone+Kaffeesatz" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Yanone+Kaffeesatz" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 
 </head>
+
 <body>
-    <!--Navbar-->
-<nav class="navbar navbar-expand-md navbar-light default-color lighten-4">
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-light default-color lighten-4">
 
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="Index.html"><img id="img-nav"src="../img/Logo/logo-ola.png">
-        </a>
-    
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-    
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="dataVisit.html">Visitantes
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="registryCompany.html">Registro</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="dataCompany.html">Trabajadores</a>
-                </li>
-    </nav>
-    <!--/.Navbar-->
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="Index.html">
+      <img id="img-nav" src="../img/icons/log-out-symbol.png">
+    </a>
 
-    <main class="container-fluid text-center">
-        <h5>Registro de Visitantes</h5>
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </div>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="dataVisit.html">Visitas registradas
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registryCompany.html">Registrar nuevo miembro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dataCompany.html">Miembros registrados</a>
+        </li>
+  </nav>
+  <!--/.Navbar-->
+
+  <main class="container-fluid text-center">
+    <h5>Visitas registradas</h5>
+
+    </div>
     <section>
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Empresa que visita</th>
-                <th scope="col">Día</th>
-                <th scope="col">Hora de Entrada</th>
-                <th scope="col">Salida</th>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Empresa que visita</th>
+            <th scope="col">Día</th>
+            <th scope="col">Hora de Entrada</th>
+            <th scope="col">Hora de Salida</th>
 
-              </tr>
-            </thead>
-            <tbody id="info-Visit">
+          </tr>
+        </thead>
+        <tbody id="info-Visit">
 
-            </tbody>
-          </table>
+        </tbody>
+      </table>
     </section>
-    </main>
+  </main>
 
 
-    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-messaging.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-functions.js"></script>
-    <script src="../js/data.js"></script>
-    <script src="../js/main2.js"></script>
-    <script src="../js/app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-functions.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/main2.js"></script>
+  <script src="../js/app.js"></script>
 </body>
+
 </html>
