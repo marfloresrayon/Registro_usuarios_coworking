@@ -1,5 +1,9 @@
 # :wave: Olá. Registro de usuarios para coworking
 
+#### Datos para iniciar sesión
+Correo electrónico: admin@terminal1.com
+Contraseña: 123456
+
 ## :clipboard: Contexto
 
 Actualmente operan cerca de 74 espacios de coworking en México, han ganado la 
