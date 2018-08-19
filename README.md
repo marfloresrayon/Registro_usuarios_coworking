@@ -192,11 +192,142 @@ Creemos que el coworking se centra en la creación de un espacio que fomente la
 colaboración, el compartir conocimientos, la **innovación y la experiencia de**
 **usuario**. 
 
-## :star: Épicas
+### :woman::man: Actores del proyecto
+
+Cliente:
+- Recepcionista
+- Administrador(a) del coworking
+
+Equipo Scrum:
+- Equipo de UX
+- Equipo de desarrollo
+
+En todas las historias de usuario (HU) participa el equipo scrum en su 
+completud ya que cada HU tiene tareas de UX y desarrollo, sin embargo como 
+este es el product backlog no se incluyen las tareas (que serían incluidas 
+en el sprint backlog una vez estimadas y priorizadas)
+
+### :chart_with_upwards_trend: Motivaciones para este proyecto por parte del cliente
+- Como recepcionista quiero agilizar el proceso de registro de los usuarios 
+  para ofrecer una mejor experiencia a nuestros visitantes.
+
+- Como administrador del coworking quiero saber quienes han visitado el 
+  coworking para llevar un control y dar mayor seguridad a nuestros miembros.
+
+- Como administrador del coworking quiero llevar un registro de los miembros 
+  del coworking para llevar un control y dar mayor seguridad a nuestros miembros.
+
+### Iniciativas
+
+- INIT01 - Registro de usuarios VISITANTES en la plataforma digital de 
+  “registro de usuarios”.
+
+- INIT02- Registro de usuarios MIEMBROS en la plataforma digital de 
+  “registro de usuarios”.
+
+
+### :zap: Epics
+
+- EP01(de la -INIT01) Yo como RECEPCIONISTA del coworking debo poder INGRESAR 
+  los datos del visitante en la plataforma digital de “registro de usuarios”.
+
+- EP02(de la -INIT01) Yo como RECEPCIONISTA del coworking debo poder CONSULTAR  
+  los datos del visitante en la plataforma digital de “registro de usuarios”.
+
+- EP03(de la -INIT01) Yo como ADMINISTRADOR del coworking debo poder CONSULTAR 
+  los datos del visitante en la plataforma digital de “registro de usuarios”.
+
+- EP04(de la -INIT02) Yo como ADMINISTRADOR del coworking debo poder INGRESAR 
+  los datos de los miembros del coworking en la plataforma digital de 
+  “registro de usuarios”.
+
+- EP05(de la -INIT02) Yo como ADMINISTRADOR del coworking debo poder CONSULTAR 
+  los datos de los miembros del coworking en la plataforma digital de 
+  “registro de usuarios”.
+
+- EP06(de la -INIT02) Yo como ADMINISTRADOR del coworking debo poder ELIMINAR 
+  los datos de los miembros del coworking en la plataforma digital de 
+  “registro de usuarios”.
 
 ![Fotografía épicas](src/img/epic.jpg)
 
-## :bar_chart: Historias de usuario
+## :bookmark_tabs: Historias de usuario
+
+- HU01 (de la EP01)- Yo como RECEPCIONISTA del coworking debo poder ACCEDER a 
+  la plataforma digital de “registro de usuarios” con usuario y contraseña para 
+  realizar el registro del visitante.
+
+- HU02 (de la EP01)- Yo como RECEPCIONISTA del coworking debo poder INGRESAR los 
+  datos del visitante (nombre, empresa que visita, hora de entrada) en un formulario 
+  de la plataforma digital de “registro de usuarios” para iniciar el registro del 
+  visitante previo a su ingreso.
+
+- HU03 (de la EP01)- Yo como RECEPCIONISTA del coworking debo poder CAPTURAR una foto 
+  del visitante, que muestre su rostro de manera descubireta, con la herramienta de toma 
+  de fotografía de la plataforma digital de “registro de usuarios” para continuar el 
+  registro del visitante previo a su ingreso.
+
+- HU04 (de la EP01)- Yo como RECEPCIONISTA del coworking debo poder VISUALIZAR un 
+  resumen de los datos ingresados del visitante en la plataforma digital de “registro 
+  de usuarios” para concluir el registro del visitante previo a su ingreso.
+
+- HU05 (de la EP01)- Yo como RECEPCIONISTA del coworking debo poder INGRESAR la hora 
+  de salida del visitante en la base de datos de la plataforma digital de “registro de 
+  usuarios” para finalizar el registro del visitante posterior a su ingreso.
+
+- HU06 (de la EP02)- Yo como RECEPCIONISTA del coworking debo poder ACCEDER a la 
+  plataforma digital de “registro de usuarios” con usuario y contraseña para CONSULTAR 
+  el registro del visitante.
+
+- HU07 (de la EP02)- Yo como RECEPCIONISTA del coworking debo poder VISUALIZAR una lista 
+  de los visitantes (con sus respectivos datos:  nombre, empresa que visita, hora de entrada 
+  y hora de salida) registrados en la plataforma digital de “registro de usuarios” para 
+  llevar un control.
+
+- HU08 (de la EP03)- Yo como ADMINISTRADOR del coworking debo poder ACCEDER a la plataforma 
+  digital de “registro de usuarios” con usuario y contraseña para CONSULTAR el registro 
+  del visitante.
+
+- HU09 (de la EP03)- Yo como ADMINISTRADOR del coworking debo poder VISUALIZAR una 
+  lista de los visitantes (con sus respectivos datos: nombre, empresa que visita, 
+  hora de entrada y hora de salida ) registrados en la plataforma digital de 
+  “registro de usuarios” para llevar un control.
+
+- HU010(de la -EP04)- Yo como ADMINISTRADOR del coworking debo poder ACCEDER a la 
+  plataforma digital de “registro de usuarios” con usuario y contraseña para 
+  INGRESAR los datos de los miembros del coworking.
+
+- HU11(de la -EP04)- Yo como ADMINISTRADOR del coworking debo poder INGRESAR los 
+  datos del los miembros del coworking ( nombre del miembro, nombre de su empresa, mail) 
+  en un formulario de la plataforma digital de “registro de usuarios” para realizar el 
+  registro del miembro.
+
+- HU12(de la -EP05)- Yo como ADMINISTRADOR del coworking debo poder ACCEDER a 
+  la plataforma digital de “registro de usuarios” con usuario y contraseña para 
+  CONSULTAR los datos de los miembros del coworking.
+
+- HU013 (de la EP05)- Yo como ADMINISTRADOR del coworking debo poder VISUALIZAR una 
+  lista de los miembros del coworking (con sus respectivos datos: nombre, empresa a 
+  la que pertenece, mail ) registrados en la plataforma digital de “registro 
+  de usuarios” para llevar un control.
+
+- HU14(de la -EP06)- Yo como ADMINISTRADOR del coworking debo poder ACCEDER a 
+  la plataforma digital de “registro de usuarios” con usuario y contraseña para 
+  CONSULTAR los datos de los miembros del coworking.
+
+- HU015 (de la EP06)- Yo como ADMINISTRADOR del coworking debo poder ELIMINAR 
+  los datos del los miembros ( nombre del miembro, nombre de su empresa, mail) 
+  de la lista de los miembros del coworking registrados en la plataforma digital 
+  de “registro de usuarios” para llevar un control.
+
+### :heavy_check_mark: Definición de hecho (o terminado)
+* Asegurar una correcta ortografía en todas las pantallas.
+* Asegurar una redacción sencilla  y sin ambigüedades.
+* Asegurar que el trabajo de todos los miembros del equipo está totalmente 
+  integrado en cada iteración.
+* Asegurar la correcta visualización del sitio web en el navegador Chrome.
+* Asegurar el correcto funcionamiento del sitio web en el navegador Chrome.
+* Asegurar la correcta visualización del sitio web en desktop.
 
 ## :art: Proceso de diseño 
 
