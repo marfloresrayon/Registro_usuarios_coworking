@@ -8,11 +8,11 @@ firebase.database().ref('visit')
         <h4>Información del visitante</h4>
         <p>Nombre: ${newUser.val().name}</p>
         <p>Empresa de origen: ${newUser.val().company}</p>
-        <p>Empresa que visita: ${newUser.val().companyVisit}</p>
-        <p>Persona que visita: ${newUser.val().employee}</p>
+        <p>Empresa a la que visita: ${newUser.val().companyVisit}</p>
+        <p>Persona a la que visita: ${newUser.val().employee}</p>
         <p>Fecha: ${newUser.val().date}</p>
-        <p>Hora: ${newUser.val().time}</p>
-        <p>Clave unica: ${newUser.val().keyVisit}</p>
+        <p>Hora de ingreso: ${newUser.val().time}</p>
+        <p>Clave única: ${newUser.val().keyVisit}</p>
       </div>
     </div>`;
   });
