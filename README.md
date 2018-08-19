@@ -354,6 +354,8 @@ conocer los touch points y los games points que podría generar la plataforma.
 Realizamos las pruebas con usuarias de los 25 a los 37 años, estas fueron algunas
 de las observaciones obtenidas:
 
+[Videos de user testing](https://drive.google.com/drive/folders/1ocgHERLB35E4b09Q7KZS7mcEPTufXOJD?usp=sharing)
+
 * "Necesitan agrandar la letra, es muy poco legible en el Ipad"
 * "No me queda claro qué voy a registrar en la parte de Administración"
 * "¿Cómo puedo hacer logout en el área de administración?"

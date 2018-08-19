@@ -10,8 +10,8 @@ h3 {
 }
 
 .btn-danger{
-    margin-top: 7rem;
-    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-left: 70rem;
 }
 
 #img{
@@ -41,9 +41,6 @@ h5 {
     font-family: Impact;
 }
 
-#logout {
-    margin-top: 20rem;
-}
 
 .btn-center{
     margin-top: 5rem;
